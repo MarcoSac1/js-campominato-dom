@@ -96,3 +96,33 @@ section.container > .active{
     background-color: blueviolet;
 }
 
+section.container > article.box_bomb{
+    width: calc((100% / 10) - 4px);
+    height: calc((100% / 10) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container > article.box_bomb{
+    width: calc((100% / 9) - 4px);
+    height: calc((100% / 9) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container > article.box_bomb{
+    width: calc((100% / 7) - 4px);
+    height: calc((100% / 7) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container > .active_bomb{
+    background-color: rgb(226, 64, 43);
+}

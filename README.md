@@ -24,10 +24,14 @@ difficoltà 3 ⇒ 49 caselle, con un numero compreso tra 1 e 49, divise in 7 cas
 
 <!-- 
 
-- creo un array che generi 16 numeri casuali che non si ripetono 
-- creo un ciclo 
-    - se l'utente seleziona un numero 'bomba' presente nel array la partita termina
-    - altimenti prende il colore pre selezionato della casella 'stanadard'
+- per 16 volte
+    - genero un numero casuale che non ho già generato
+    - aggiungo quel numero all'array delle bombe
+- per ogni cella della griglia
+    - quando l'utente clicca su quella cella, allora
+       - se la cella contiene una 'bomba' presente nel array allora
+          - termino la partita
+       - altimenti prende il colore pre selezionato della casella 'stanadard'
 al termine della partita il software restituisce il puntegio ottenuto
 
 -->

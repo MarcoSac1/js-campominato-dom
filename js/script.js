@@ -24,6 +24,29 @@ startGame.addEventListener('click', function() {
     
     gridContainer.innerHTML = ''
 
+    const arrayBombe = getUniqueRandomInt (1, 16, numberOfCell);
+    for (let index = 0; index < getRandomInt; index++) {
+        // creo un elemento
+        const bombCell = document.createElement('article');
+        // agiungo classi a bombCell
+        bombCell.classList.add('box_bomb', `${level}`);
+        bombCell.append(index + 1);
+        // lo stampo nel 'DOM'
+        gridContainer.appendChild(bombCell);
+        if(bombCell){
+            bombCell.addEventListener('click', function(){
+                bombCell.classList.add('active_bomb');
+                // faccio un console.log per stampare il numero che corrisponde alla cella cliccata
+                console.log(index + 1);
+            });
+
+        }
+        
+        
+    }
+
+
+
     // creo un ciclo 'for' per inserire 100 elementi al interno del container
     for (let index = 0; index < numberOfCell; index++) {
 
@@ -42,6 +65,7 @@ startGame.addEventListener('click', function() {
         });
 
     }
+
 });
 
 
