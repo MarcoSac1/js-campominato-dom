@@ -49,7 +49,6 @@ startGame.addEventListener('click', function() {
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * ((max + 1) - min)) + min;
 
-    
 }
 
 function getUniqueRandomInt(notDesiredNumber, min, max) {
