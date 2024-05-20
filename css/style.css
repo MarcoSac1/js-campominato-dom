@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 160px;
+    margin: 1rem;
+}
+
+.start{
+    background-color: green;
+    padding:.5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    color:white;
+    margin: 1rem;
+}
+
+.select_level{
+    color: green;
+    padding:.5rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+}
+
+h1{
+    padding: 2rem;
+}
+
+main{
+    background-color: goldenrod;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    /* border: 2px solid white; */
+    margin: 0 auto;
+    font-weight: 600;
+    
+}
+
+section.container > article.box{
+    width: calc((100% / 10) - 4px);
+    height: calc((100% / 10) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container > article.box.medium{
+    width: calc((100% / 9) - 4px);
+    height: calc((100% / 9) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.container > article.box.hard{
+    width: calc((100% / 7) - 4px);
+    height: calc((100% / 7) - 4px);
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section.container > .active{
+    background-color: blueviolet;
+}
+
