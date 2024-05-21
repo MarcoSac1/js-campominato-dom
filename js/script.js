@@ -72,24 +72,34 @@ startGame.addEventListener('click', function() {
 
 
 
-    // // creo un ciclo 'for' per inserire 100 elementi al interno del container
-    // for (let index = 0; index < numberOfCell; index++) {
+    // creo un ciclo 'for' per inserire 100 elementi al interno del container
+    for (let index = 0; index < numberOfCell; index++) {
 
-    //     // creo un elemento 
-    //     const squareEl = document.createElement('article');
-    //     // aggiungo classi a squareEl
-    //     squareEl.classList.add('box', `${level}`);
-    //     squareEl.append(index + 1);
-    //     // lo stampo nel 'DOM'
-    //     gridContainer.appendChild(squareEl);
+        // creo un elemento 
+        const squareEl = document.createElement('article');
+        // aggiungo classi a squareEl
+        squareEl.classList.add('box', `${level}`);
+        squareEl.append(index + 1);
+        // lo stampo nel 'DOM'
+        gridContainer.appendChild(squareEl);
 
-    //     squareEl.addEventListener('click', function(){
-    //         squareEl.classList.add('active');
-    //         // faccio un console.log per stampare il numero che corrisponde alla cella cliccata
-    //         console.log(index + 1);
-    //     });
+        squareEl.addEventListener('click', function(){
+            squareEl.classList.add('active');
+            // faccio un console.log per stampare il numero che corrisponde alla cella cliccata
+            console.log(index + 1);
+            if(numberOfCell.includes(bombArray)){
+                // creo un elemento
+                const bombCell = document.createElement('article');
+                // agiungo classi a bombCell
+                bombCell.classList.add('box_bomb', `${level}`);
+                bombCell.append(index + 1);
+                // lo stampo nel 'DOM'
+                gridContainer.appendChild(bombCell);
+                alert('Game Over')
+            }
+        });
 
-    // }
+    }
 
 });
 
@@ -101,7 +111,7 @@ startGame.addEventListener('click', function() {
 // }
 
 // function getUniqueRandomInt(randomNumber, min, max) {
-    
+
 //     let otherNumber;
 //     let isFound = true;
 
